@@ -15,7 +15,7 @@ before_install:
   - gcloud config set compute/zone us-central1-c
   
   # This is to say the details about the cluster in K8S
-  - gcloud container clusters get-credentials  multi-cluster
+  - gcloud container clusters get-credentials multi-cluster
   
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
